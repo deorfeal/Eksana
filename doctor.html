@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Doctor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header header--white header--white-menu">
         <div class="container">
             <div class="header__inner">
                 <a class="header__logo logo" href="#">
@@ -440,121 +443,621 @@
                 </div>
             </div>
         </div>
-        <div class="header__bottom header-bottom">
-            <div class="container">
-                <div class="header-bottom__inner">
-                    <nav class="header-bottom__menu header-bottom-menu">
-                        <ul class="header-bottom-menu__list">
-                            <li class="header-bottom-menu__list-item">
-                                <a class="header-bottom-menu__list-link" href="#">
-                                    Вакансии
-                                </a>
-                            </li>
-                            <li class="header-bottom-menu__list-item">
-                                <a class="header-bottom-menu__list-link" href="#">
-                                    Лицензии
-                                </a>
-                            </li>
-                            <li class="header-bottom-menu__list-item">
-                                <a class="header-bottom-menu__list-link" href="#">
-                                    Реквизиты
-                                </a>
-                            </li>
-                            <li class="header-bottom-menu__list-item">
-                                <a class="header-bottom-menu__list-link" href="#">
-                                    Пациентам
-                                </a>
-                            </li>
-                            <li class="header-bottom-menu__list-item">
-                                <a class="header-bottom-menu__list-link header-bottom-menu__list-link--active" href="#">
-                                    Галерея
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
     </header>
 
     <div class="wrapper">
         <main class="main">
-            <section class="main__gallery gallery">
+            <section class="main__doctor doctor">
                 <div class="container">
-                    <h2 class="gallery__title title">
-                        Галерея
-                    </h2>
-                    <div class="gallery__inner">
-                        <div class="gallery__item gallery-item">
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-1.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-1.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-2.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-2.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-3.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-3.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-4.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-4.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-5.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-5.jpg" alt="img">
-                            </a>
+                    <div class="doctor__inner">
+                        <div class="doctor__heading heading">
+                            <p class="heading__suptitle">
+                                Врач
+                            </p>
+                            <h1 class="heading__title">
+                                Татьяна
+                                <span>Александрова</span>
+                                Самойлова
+                            </h1>
+                            <div class="heading__links heading-links">
+                                <a class="heading-links__button btn--green" href="#">
+                                    <span>
+                                        Записаться к врачу
+                                    </span>
+                                </a>
+                                <a class="heading-links__link" href="#">
+                                    Отзывы о враче
+                                </a>
+                            </div>
                         </div>
-                        <div class="gallery__item gallery-item">
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-6.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-6.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-7.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-7.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-8.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-8.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-9.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-9.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-10.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-10.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-11.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-11.jpg" alt="img">
-                            </a>
+                        <div class="doctor__img">
+                            <img class="doctor__img-image" src="images/doctor-img.png" alt="doctor">
                         </div>
-                        <div class="gallery__item gallery-item">
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-12.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-12.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-13.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-13.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-14.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-14.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-15.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-15.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-16.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-16.jpg" alt="img">
-                            </a>
+                        <div class="doctor__body">
+                            <h2 class="doctor__body-title">
+                                УЗИ-специалист нашего центра
+                            </h2>
                         </div>
-                        <div class="gallery__item gallery-item">
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-17.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-17.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-18.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-18.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-19.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-19.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-20.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-20.jpg" alt="img">
-                            </a>
-                            <a class="gallery-item__img" data-fancybox="gallery" href="images/gallery-img-21.jpg">
-                                <img class="gallery-item__img-image" src="images/gallery-img-21.jpg" alt="img">
-                            </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about-doctor about-doctor">
+                <div class="container">
+                    <div class="about-doctor__inner">
+                        <div class="about-doctor__body about-doctor-body">
+                            <div class="about-doctor-body__heading heading">
+                                <h2 class="heading__title">
+                                    О
+                                    <span>
+                                        враче
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="about-doctor-body__inner">
+                                <div class="about-doctor-body__box about-doctor-body-box">
+                                    <h3 class="about-doctor-body-box__title">
+                                        Образование и практика
+                                    </h3>
+                                    <div class="about-doctor-body-box__wrapper">
+                                        <p class="about-doctor-body-box__text">
+                                            В 2010 году окончила Белорусский государственный медицинский университет по
+                                            специальности «Лечебное дело».
+                                        </p>
+                                        <p class="about-doctor-body-box__text">
+                                            С 2010 по 2011 год прошла интернатуру по специальности анестезиология и
+                                            реаниматология на базе УЗ «МОКБ».\
+                                        </p>
+                                        <p class="about-doctor-body-box__text">
+                                            С августа 2011 года и по настоящее время работает врачом
+                                            анестезиологом-реаниматологом в УЗ «Минская областная клиническая больница».
+                                        </p>
+                                        <p class="about-doctor-body-box__text">
+                                            2017 — 2020 гг. — Республиканский научно — практический центр онкологии и
+                                            медицинской радиологии им. Н.Н. Александрова, ординатура по специальности
+                                            «Анестезиология — реаниматология».
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="about-doctor-body__box about-doctor-body-box">
+                                    <h3 class="about-doctor-body-box__title">
+                                        Стаж работы:
+                                        <span>12лет</span>
+                                    </h3>
+                                </div>
+                                <div class="about-doctor-body__box about-doctor-body-box">
+                                    <h3 class="about-doctor-body-box__title">
+                                        Образование и практика
+                                    </h3>
+                                    <ul class="about-doctor-body-box__list">
+                                        <li class="about-doctor-body-box__list-item">
+                                            2012 г. — «Анестезиологическое обеспечение хирургических вмешательств»,
+                                            БелМАПО
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+
+                                            2013 г. — «Дыхательная недостаточность и ее интенсивная терапия у детей»,
+                                            БелМАПО
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2014 г. — стажировка в Республиканском научно-практическом центре
+                                            «Кардиология»
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2014 г. — 1-й Европейский курс СEEA «Дыхание и грудная клетка» с
+                                            международным участием
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2015 г. — 2-й Европейский курс СEEA «Сердце и сосуды» с международным
+                                            участием
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2016 г. — 3-й Европейский курс СEEA «Интенсивная терапия. Неотложная
+                                            медицина. Кровь и гемотрансфузия»
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2016 г. — cтажировка в Szpital Wojewódzki im. dr. Ludwika Rydygiera w
+                                            Suwałkach (Польша)
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2016 г. — «Интенсивная терапия и анестезиологическое обеспечение органных
+                                            трансплантаций и высокотравматичных операций на органах брюшной полости»,
+                                            БелМАПО
+                                        </li>
+                                        <li class="about-doctor-body-box__list-item">
+                                            2018 г. — «Клиническое питание в медицине критических состояний», БелМАПО
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-doctor__img">
+                            <img class="about-doctor__img-image" src="images/about-doctor-img.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__directions directions">
+                <div class="container">
+                    <div class="directions__inner">
+                        <h2 class="directions__aside-title aside-title">
+                            Направления деятельности
+                        </h2>
+                        <div class="directions__body directions-body">
+                            <div class="directions-body__top">
+                                <h3 class="directions-body__top-title">
+                                    Услуги врача
+                                </h3>
+                                <p class="directions-body__top-text">
+                                    Выберете услугу чтобы продолжить
+                                </p>
+                            </div>
+                            <div class="directions-body__inner">
+                                <a class="directions-body__item" href="#">
+                                    Эхокардиография (УЗИ сердца)
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов брюшной полости и почек
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ кишечника
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ печени, желчного пузыря оценка функции желчного пузыря
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов мочевыделительной системы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ молочной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов малого таза у женщин
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов половой системы у мужчин
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ мягких тканей
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ лимфатических узлов
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ слюнных желез
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов малого таза у женщин
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ органов половой системы у мужчин
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ мягких тканей
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ лимфатических узлов
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ слюнных желез
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <a class="directions-body__item directions-body__item--more" href="#">
+                                    УЗИ щитовидной железы
+                                </a>
+                                <button class="directions-body__button" type="button">
+                                    <span>
+                                        Смотреть больше
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        Смотреть меньше
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__recalls recalls">
+                <div class="container">
+                    <div class="recalls__heading heading">
+                        <h2 class="heading__title">
+                            <span>Отзывы</span>  о враче
+                        </h2>
+                    </div>
+                    <div class="recalls__swiper recalls-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                <div class="recalls-slide__top">
+                                    <p class="recalls-slide__top-name">
+                                        Антон Макаренко
+                                    </p>
+                                    <time class="recalls-slide__top-date">
+                                        02.07.2023 16:56
+                                    </time>
+                                </div>
+                                <div class="recalls-slide__inner">
+                                    <p class="recalls-slide__text">
+                                        Lorem ipsum dolor sit amet consectetur. Neque in natoque risus dapibus tempor
+                                        nibh duis. Phasellus purus proin scelerisque volutpat auctor. Porta interdum
+                                        metus elit id. Porta tincidunt sit nisl pellentesque velit turpis. Aliquam
+                                        tristique at odio vitae.
+                                    </p>
+                                    <p class="recalls-slide__text">
+                                        Vestibulum non dui consequat id metus et nisi. Lacus lobortis arcu posuere dolor
+                                        sit vivamus in massa enim.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                <div class="recalls-slide__top">
+                                    <p class="recalls-slide__top-name">
+                                        Антон Макаренко
+                                    </p>
+                                    <time class="recalls-slide__top-date">
+                                        02.07.2023 16:56
+                                    </time>
+                                </div>
+                                <div class="recalls-slide__inner">
+                                    <p class="recalls-slide__text">
+                                        Lorem ipsum dolor sit amet consectetur. Neque in natoque risus dapibus tempor
+                                        nibh duis. Phasellus purus proin scelerisque volutpat auctor. Porta interdum
+                                        metus elit id. Porta tincidunt sit nisl pellentesque velit turpis. Aliquam
+                                        tristique at odio vitae.
+                                    </p>
+                                    <p class="recalls-slide__text">
+                                        Vestibulum non dui consequat id metus et nisi. Lacus lobortis arcu posuere dolor
+                                        sit vivamus in massa enim.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recalls-swiper__slide recalls-slide swiper-slide">
+                                <div class="recalls-slide__top">
+                                    <p class="recalls-slide__top-name">
+                                        Антон Макаренко
+                                    </p>
+                                    <time class="recalls-slide__top-date">
+                                        02.07.2023 16:56
+                                    </time>
+                                </div>
+                                <div class="recalls-slide__inner">
+                                    <p class="recalls-slide__text">
+                                        Lorem ipsum dolor sit amet consectetur. Neque in natoque risus dapibus tempor
+                                        nibh duis. Phasellus purus proin scelerisque volutpat auctor. Porta interdum
+                                        metus elit id. Porta tincidunt sit nisl pellentesque velit turpis. Aliquam
+                                        tristique at odio vitae.
+                                    </p>
+                                    <p class="recalls-slide__text">
+                                        Vestibulum non dui consequat id metus et nisi. Lacus lobortis arcu posuere dolor
+                                        sit vivamus in massa enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recalls-swiper__pagination swiper-pagination">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contacts contacts">
+                <div class="contacts__inner">
+                    <div class="contacts__map" id="map"></div>
+                    <div class="contacts__body contacts-body">
+                        <div class="container">
+                            <div class="contacts-body__inner">
+                                <h1 class="contacts-body__title title">
+                                    КОНТАКТЫ
+                                </h1>
+                                <div class="contacts-body__row contacts-body-row">
+                                    <p class="contacts-body-row__text">
+                                        Телефоны:
+                                    </p>
+                                    <div class="contacts-body-row__inner">
+                                        <a class="contacts-body-row__link" href="tel:+ 11234567810">
+                                            + 1 (123) 456 78 10,
+                                        </a>
+                                        <a class="contacts-body-row__link" href="tel:+1425237111">
+                                            + 1 (42) 523 71 11
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-body__row contacts-body-row">
+                                    <p class="contacts-body-row__text">
+                                        Email:
+                                    </p>
+                                    <div class="contacts-body-row__inner">
+                                        <a class="contacts-body-row__link" href="mailto:email@gmail.com,">
+                                            email@gmail.com,
+                                        </a>
+                                        <a class="contacts-body-row__link" href="mailto:support@gmail.com">
+                                            support@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-body__row contacts-body-row">
+                                    <p class="contacts-body-row__text">
+                                        Офис:
+                                    </p>
+                                    <div class="contacts-body-row__inner">
+                                        <a class="contacts-body-row__link" href="#">
+                                            Tukums, Tukuma pilsēta, LV-3101, Латвия
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts-body__row contacts-body-row">
+                                    <p class="contacts-body-row__text">
+                                        ОГРНИП:
+                                    </p>
+                                    <div class="contacts-body-row__inner">
+                                        <a class="contacts-body-row__link" href="#">
+                                            304500116000157
+                                        </a>
+                                    </div>
+                                </div>
+                                <h2 class="contacts-body__subtitle">
+                                    Адреса филиалов
+                                </h2>
+                                <ul class="contacts-body__list contacts-body-list">
+                                    <li class="contacts-body-list__item" id="0">
+                                        <div class="contacts-body-list__inner">
+                                            <a class="contacts-body-list__link" href="#">
+                                                Tukums, Tukuma pilsēta, LV-3101, Латвия
+                                            </a>
+                                            <div class="contacts-body-list__links">
+                                                <a class="contacts-body-list__links-link" href="tel:+11234567810">
+                                                    + 1 (123) 456 78 10,
+                                                </a>
+                                                <a class="contacts-body-list__links-link" href="tel:+1425237111">
+                                                    + 1 (42) 523 71 11
+                                                </a>
+                                                <a class="contacts-body-list__links-link"
+                                                    href="mailto:support@gmail.com">
+                                                    support@gmail.com
+                                                </a>
+                                            </div>
+                                            <button class="contacts-body-list__way" type="button" id="0">
+                                                <span>
+                                                    Как проехать?
+                                                </span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="contacts-body-list__location">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_136_1087)">
+                                                    <path
+                                                        d="M18 36C18 36 31.5 23.2065 31.5 13.5C31.5 9.91958 30.0777 6.4858 27.5459 3.95406C25.0142 1.42232 21.5804 0 18 0C14.4196 0 10.9858 1.42232 8.45406 3.95406C5.92232 6.4858 4.5 9.91958 4.5 13.5C4.5 23.2065 18 36 18 36ZM18 20.25C16.2098 20.25 14.4929 19.5388 13.227 18.273C11.9612 17.0071 11.25 15.2902 11.25 13.5C11.25 11.7098 11.9612 9.9929 13.227 8.72703C14.4929 7.46116 16.2098 6.75 18 6.75C19.7902 6.75 21.5071 7.46116 22.773 8.72703C24.0388 9.9929 24.75 11.7098 24.75 13.5C24.75 15.2902 24.0388 17.0071 22.773 18.273C21.5071 19.5388 19.7902 20.25 18 20.25Z"
+                                                        fill="#0C8195" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_136_1087">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="contacts-body-list__item" id="1">
+                                        <div class="contacts-body-list__inner">
+                                            <a class="contacts-body-list__link" href="#">
+                                                Tukums, Tukuma pilsēta, LV-3101, Латвия
+                                            </a>
+                                            <div class="contacts-body-list__links">
+                                                <a class="contacts-body-list__links-link" href="tel:+11234567810">
+                                                    + 1 (123) 456 78 10,
+                                                </a>
+                                                <a class="contacts-body-list__links-link" href="tel:+1425237111">
+                                                    + 1 (42) 523 71 11
+                                                </a>
+                                                <a class="contacts-body-list__links-link"
+                                                    href="mailto:support@gmail.com">
+                                                    support@gmail.com
+                                                </a>
+                                            </div>
+                                            <button class="contacts-body-list__way" type="button" id="1">
+                                                <span>
+                                                    Как проехать?
+                                                </span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="contacts-body-list__location">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_136_1087)">
+                                                    <path
+                                                        d="M18 36C18 36 31.5 23.2065 31.5 13.5C31.5 9.91958 30.0777 6.4858 27.5459 3.95406C25.0142 1.42232 21.5804 0 18 0C14.4196 0 10.9858 1.42232 8.45406 3.95406C5.92232 6.4858 4.5 9.91958 4.5 13.5C4.5 23.2065 18 36 18 36ZM18 20.25C16.2098 20.25 14.4929 19.5388 13.227 18.273C11.9612 17.0071 11.25 15.2902 11.25 13.5C11.25 11.7098 11.9612 9.9929 13.227 8.72703C14.4929 7.46116 16.2098 6.75 18 6.75C19.7902 6.75 21.5071 7.46116 22.773 8.72703C24.0388 9.9929 24.75 11.7098 24.75 13.5C24.75 15.2902 24.0388 17.0071 22.773 18.273C21.5071 19.5388 19.7902 20.25 18 20.25Z"
+                                                        fill="#0C8195" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_136_1087">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="contacts-body-list__item" id="2">
+                                        <div class="contacts-body-list__inner">
+                                            <a class="contacts-body-list__link" href="#">
+                                                Tukums, Tukuma pilsēta, LV-3101, Латвия
+                                            </a>
+                                            <div class="contacts-body-list__links">
+                                                <a class="contacts-body-list__links-link" href="tel:+11234567810">
+                                                    + 1 (123) 456 78 10,
+                                                </a>
+                                                <a class="contacts-body-list__links-link" href="tel:+1425237111">
+                                                    + 1 (42) 523 71 11
+                                                </a>
+                                                <a class="contacts-body-list__links-link"
+                                                    href="mailto:support@gmail.com">
+                                                    support@gmail.com
+                                                </a>
+                                            </div>
+                                            <button class="contacts-body-list__way" type="button" id="2">
+                                                <span>
+                                                    Как проехать?
+                                                </span>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C7F92"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="white"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6.97034 2.46936C7.04001 2.39952 7.12277 2.34411 7.21389 2.3063C7.30501 2.26849 7.40269 2.24902 7.50134 2.24902C7.59999 2.24902 7.69767 2.26849 7.78879 2.3063C7.87991 2.34411 7.96267 2.39952 8.03234 2.46936L17.0323 11.4694C17.1022 11.539 17.1576 11.6218 17.1954 11.7129C17.2332 11.804 17.2527 11.9017 17.2527 12.0004C17.2527 12.099 17.2332 12.1967 17.1954 12.2878C17.1576 12.3789 17.1022 12.4617 17.0323 12.5314L8.03234 21.5314C7.89151 21.6722 7.7005 21.7513 7.50134 21.7513C7.30218 21.7513 7.11117 21.6722 6.97034 21.5314C6.82951 21.3905 6.75039 21.1995 6.75039 21.0004C6.75039 20.8012 6.82951 20.6102 6.97034 20.4694L15.4408 12.0004L6.97034 3.53136C6.9005 3.4617 6.84508 3.37893 6.80727 3.28781C6.76946 3.1967 6.75 3.09901 6.75 3.00036C6.75 2.90171 6.76946 2.80403 6.80727 2.71291C6.84508 2.6218 6.9005 2.53903 6.97034 2.46936Z"
+                                                        fill="#0C8195"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="contacts-body-list__location">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_136_1087)">
+                                                    <path
+                                                        d="M18 36C18 36 31.5 23.2065 31.5 13.5C31.5 9.91958 30.0777 6.4858 27.5459 3.95406C25.0142 1.42232 21.5804 0 18 0C14.4196 0 10.9858 1.42232 8.45406 3.95406C5.92232 6.4858 4.5 9.91958 4.5 13.5C4.5 23.2065 18 36 18 36ZM18 20.25C16.2098 20.25 14.4929 19.5388 13.227 18.273C11.9612 17.0071 11.25 15.2902 11.25 13.5C11.25 11.7098 11.9612 9.9929 13.227 8.72703C14.4929 7.46116 16.2098 6.75 18 6.75C19.7902 6.75 21.5071 7.46116 22.773 8.72703C24.0388 9.9929 24.75 11.7098 24.75 13.5C24.75 15.2902 24.0388 17.0071 22.773 18.273C21.5071 19.5388 19.7902 20.25 18 20.25Z"
+                                                        fill="#0C8195" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_136_1087">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -780,7 +1283,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
