@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -690,7 +691,8 @@
                                 продемонстрировать нашу искреннюю заботу о вашем здоровье.
                             </p>
                             <p class="participation-body__text">
-                                В связи с этим, мы рады объявить о запуске нашей новой акции, которая поможет вам получить
+                                В связи с этим, мы рады объявить о запуске нашей новой акции, которая поможет вам
+                                получить
                                 качественные медицинские услуги по особо привлекательным ценам
                             </p>
                             <p class="participation-body__suptext">
@@ -712,11 +714,34 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </form>
-                        </div>  
+                        </div>
                         <div class="participation__img">
                             <img class="participation__img-image" src="images/participation-img.jpg" alt="img">
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="main__call-popup call-popup" id="call-popup">
+                <div class="call-popup__inner">
+                    <h3 class="call-popup__title">
+                        Заполните форму и мы Вам перезвоним
+                    </h3>
+                    <p class="call-popup__text">
+                        В течении 15 минут
+                    </p>
+                    <form class="call-popup__form call-popup-form" action="#">
+                        <input class="call-popup-form__input" type="text" placeholder="Ваше имя">
+                        <input class="call-popup-form__input" type="text" placeholder="Ваш номер телефона">
+                        <button class="call-popup-form__button btn--green" type="submit">
+                            Заказать звонок
+                        </button>
+                        <label class="container">
+                            Я ознакомился(лась) с <a href="#">политикой конфиденуиальности</a> и согласен(на) на
+                            <a href="#"> обработку моих данных</a>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
                 </div>
             </section>
         </main>
@@ -940,6 +965,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -1516,6 +1517,29 @@
                     </div>
                 </div>
             </section>
+            <section class="main__call-popup call-popup" id="call-popup">
+                <div class="call-popup__inner">
+                    <h3 class="call-popup__title">
+                        Заполните форму и мы Вам перезвоним
+                    </h3>
+                    <p class="call-popup__text">
+                        В течении 15 минут
+                    </p>
+                    <form class="call-popup__form call-popup-form" action="#">
+                        <input class="call-popup-form__input" type="text" placeholder="Ваше имя">
+                        <input class="call-popup-form__input" type="text" placeholder="Ваш номер телефона">
+                        <button class="call-popup-form__button btn--green" type="submit">
+                            Заказать звонок
+                        </button>
+                        <label class="container">
+                            Я ознакомился(лась) с <a href="#">политикой конфиденуиальности</a> и согласен(на) на
+                            <a href="#"> обработку моих данных</a>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__top footer-top">
@@ -1738,6 +1762,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
